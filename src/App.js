@@ -126,7 +126,7 @@ export default function App() {
   <div className="container galery__container">
     <div className="row">
       <div className="col text-center">
-        <h3>Gallery</h3>
+        <h3>Galery</h3>
       </div>
       </div>
       <div className="row">
@@ -136,39 +136,39 @@ export default function App() {
       </div>
       <div className="row galery__tails">
         <div className="col galery__tail">
+        <div className="galery__tail-wrap">
           <img src="src/assets/images/myImages/foto4.png" alt=""/>
-          <div className="galery__tail-wrap">
-            <h4>Lorem, ipsum.</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, minus!</p>
+          <h4>Lorem, ipsum.</h4>
+          <p className="galery__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, minus!</p>
           </div>
         </div>
         <div className="col galery__tail">
+        <div className="galery__tail-wrap">
           <img src="src/assets/images/myImages/foto3.png" alt=""/>
-          <div className="galery__tail-wrap">
-            <h4>Lorem, ipsum.</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, minus!</p>
+          <h4>Lorem, ipsum.</h4>
+          <p className="galery__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, minus!</p>
           </div>
         </div>
         <div className="col galery__tail">
+        <div className="galery__tail-wrap">
           <img src="src/assets/images/myImages/foto2.png" alt=""/>
-          <div className="galery__tail-wrap">
-            <h4>Lorem, ipsum.</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, minus!</p>
+          <h4>Lorem, ipsum.</h4>
+          <p className="galery__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, minus!</p>
           </div>
         </div>
       </div>
       </div>
       </section>
   <section className="video">
-    <div className="container">
+    <div className="container video__container">
       <div className="row">
         <div className="col">
         <img src="src/assets/images/myImages/video.png" alt=""/>
         </div>
-        <div className="col">
-          <h3>yoga training video showreel</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae voluptatum molestiae laboriosam, maxime mollitia totam. Omnis eveniet nesciunt sed.</p>
-          <div className="icons">
+        <div className="col video__description">
+          <h3 className="video__title">yoga training video showreel</h3>
+          <p className="video__main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae voluptatum molestiae laboriosam, maxime mollitia totam. Omnis eveniet nesciunt sed.</p>
+          <div className="video__icons">
           <i class="fa fa-facebook-f"></i>
           <i class="fa fa-instagram"></i>
           <i class="fa fa-twitter"></i>
@@ -178,23 +178,24 @@ export default function App() {
     </div>
   </section>
   <section className="form">
-    <div className="container">
-      <div className="row">
-        <div className="col">
-          <h3>Get in youch</h3>
+    <div className="container form__container">
+      <div className="row justify-content-center">
+        <div className="col-10 text-center">
+          <h3>Get in touch</h3>
         </div>
       </div>
-      <div className="row">
-        <div className="col">
+      <div className="row justify-content-center">
+        <div className="col-10 text-center">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, vero maxime error quidem porro placeat facilis iste sint veritatis quos?</p>
         </div>
       </div>
-      <div className="row">
-        <div className="col">
-          <input type="text"/>
-          <input type="text"/>
-          <input type="text"/>
-          <button>send message</button>
+      <div className="row justify-content-center">
+        <div className="col-10 text-center">
+          <input className="form__input"type="text" id="fname" name="firstname" placeholder="Your name"/>
+          <input className="form__input"type="text" id="fname" name="firstname" placeholder="Gender"/>
+          {/* <input type="text" id="fname" name="firstname" placeholder="Message"/> */}
+          <textarea className="form__textarea" name="" id="" cols="30" rows="10">Message</textarea>
+          <button className="btn-pink">send message</button>
         </div>
       </div>
     </div>
@@ -244,7 +245,7 @@ export default function App() {
         <div className="col-12 col-md-4">
           <img src="src/assets/images/myImages/logo-footer.png" alt=""/>
           <p>Copyright &#169;2020 Freepik <span> Company St. All rights reserved </span></p>
-          <div className="icons">
+          <div className="footer__icons">
           <i class="fa fa-facebook-f"></i>
           <i class="fa fa-instagram"></i>
           <i class="fa fa-twitter"></i>

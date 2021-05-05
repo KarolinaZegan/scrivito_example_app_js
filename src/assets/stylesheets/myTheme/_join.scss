@@ -2,8 +2,35 @@
   background-color: $bgc-grey;
   background-image: url("../images/myImages/bgc5.png");
   background-repeat: no-repeat;
+  &__container {
+    min-height: 600px;
+  }
   &__description {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 100px;
+    position: relative;
+    z-index: 1;
+    &::after {
+      content: "";
+      background-image: url("../images/myImages/Brush-Vector.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      left: 15%;
+      top: 35%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      width: 50%;
+      height: 100%;
+      background-size: contain;
+      z-index: -1;
+    }
+  }
+  h3 {
+    margin: 0;
+    padding-bottom: 20px;
+  }
+  p {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 40px;
   }
 }

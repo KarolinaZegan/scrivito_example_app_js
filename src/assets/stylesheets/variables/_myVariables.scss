@@ -1,11 +1,13 @@
 // colors --------------------------------------------------------------------------------------------
 
 $pink-button: #e6c8c3;
-$text-grey: #3b3b3e;
+$text-grey: #484f5b;
 $footer-grey: #484f5b;
 $bgc-pink: #e5ccc6;
 $light-grey: #e5e3e1;
 $bgc-grey: #e9e8e6;
+$form-bgc: #efefef;
+$form-border: #d4d4d4;
 
 // breakpoints --------------------------------------------------------------------------------------
 
@@ -67,8 +69,8 @@ $screen-lg-min: 1200px;
 }
 
 h2 {
-  @include fluid-type(20px, 75px);
-  @include fluid-line-height(24px, 80px);
+  @include fluid-type(20px, 57px);
+  @include fluid-line-height(24px, 60px);
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -76,29 +78,30 @@ h2 {
 }
 
 h3 {
-  @include fluid-type(18px, 58px);
-  @include fluid-line-height(22px, 62px);
+  @include fluid-type(18px, 60px);
+  @include fluid-line-height(22px, 75px);
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   color: $text-grey;
+  text-transform: capitalize;
 }
 h4 {
-  @include fluid-type(14px, 30px);
+  @include fluid-type(14px, 33px);
   @include fluid-line-height(18px, 35px);
   font-family: "Open Sans", sans-serif;
   color: $text-grey;
 }
 
 h5 {
-  @include fluid-type(30px, 67px);
-  @include fluid-line-height(35px, 71px);
+  @include fluid-type(14px, 25px);
+  @include fluid-line-height(18px, 25px);
   font-family: "Open Sans", sans-serif;
   color: $text-grey;
 }
 
 p {
   @include fluid-type(13px, 21px);
-  @include fluid-line-height(16px, 35px);
+  @include fluid-line-height(16px, 33px);
   font-family: "Open Sans", sans-serif;
   color: $text-grey;
 }
@@ -106,12 +109,12 @@ p {
 // Buttons-----------------------------------------------------
 
 @mixin button-primary($background, $color) {
-  @include fluid-type(11px, 24px);
+  @include fluid-type(11px, 21px);
   background-color: $background;
   color: $color;
   // border-radius: 25px;
   // border-color: $background;
-  padding: 10px 30px;
+  padding: 10px 40px;
   font-weight: 800;
   font-family: "open sans";
   text-transform: uppercase;
@@ -135,12 +138,8 @@ p {
 
 .btn-pink {
   @include button-primary($pink-button, $text-grey);
-  padding: 10px 30px;
+  padding: 10px 50px;
   border: none;
-
-  //   border: 2px solid $pink-button;
-  //   border-radius: 15px;
   margin: 0;
   font-family: "Open Sans", sans-serif;
-  margin: 0;
 }
