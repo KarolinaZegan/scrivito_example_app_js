@@ -1,3 +1,26 @@
 .video {
   background-color: #e5ccc6;
+  &__container {
+    min-height: 550px;
+    padding-top: 100px;
+  }
+  &__title {
+    padding-bottom: 25px;
+    // padding-top: 35px;
+    margin: 0;
+  }
+  &__main-text {
+    padding-bottom: 30px;
+    margin: 0;
+  }
+  &__icons {
+  }
+  i {
+    text-align: center;
+    min-width: 25px;
+    background-color: $text-grey;
+    color: white;
+    margin-right: 20px;
+    padding: 5px;
+  }
 }
