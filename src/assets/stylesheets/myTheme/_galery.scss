@@ -1,0 +1,13 @@
+.galery {
+  background-image: url("../images/myImages/bgc2.png");
+  &__container {
+    min-height: 826px;
+    padding-top: 50px;
+  }
+  &__tail {
+    text-align: center;
+  }
+  p {
+    font-size: 16px;
+  }
+}

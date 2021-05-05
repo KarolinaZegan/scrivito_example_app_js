@@ -1,0 +1,33 @@
+.program {
+  background-image: url("../images/myImages/sectionbgi.png");
+  background-size: cover;
+
+  &__description {
+    margin: 175px 0;
+  }
+  h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 74px;
+    font-weight: 600;
+    padding-bottom: 30px;
+    line-height: 85px;
+    margin: 0;
+  }
+  p {
+    font-size: 21px;
+    font-family: "Open Sans", sans-serif;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    line-height: 31px;
+    margin: 0;
+  }
+  //   .btn-pink {
+  //     font-family: "Open Sans", sans-serif;
+  //     background-color: #e6c8c3;
+  //     color: grey;
+  //     text-transform: uppercase;
+  //     border: none;
+  //     padding: 10px 30px;
+  //     font-weight: bold;
+  //   }
+}

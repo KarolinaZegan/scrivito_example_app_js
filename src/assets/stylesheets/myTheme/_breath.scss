@@ -1,0 +1,27 @@
+.breath {
+  background-image: url("../images/myImages/bgc4.png");
+  &__wrapper {
+    min-height: 636px;
+    padding-top: 100px;
+  }
+  &__foto {
+    position: relative;
+    &::after {
+      content: "";
+      background-image: url("../images/myImages/bgc3.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      left: 50%;
+      top: 65%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      background-size: contain;
+      z-index: 1;
+    }
+  }
+  img {
+    margin: 90 0 170 0;
+  }
+}

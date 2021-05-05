@@ -1,0 +1,9 @@
+.join {
+  background-color: $bgc-grey;
+  background-image: url("../images/myImages/bgc5.png");
+  background-repeat: no-repeat;
+  &__description {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+}
