@@ -4,10 +4,31 @@
     min-height: 826px;
     padding-top: 50px;
   }
+  &__tail-wrap {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
   &__tail {
     text-align: center;
   }
+  h3 {
+    padding-bottom: 20px;
+    margin: 0;
+  }
   p {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+
+  &__title {
+    margin: 0;
+  }
+  &__text {
+    margin: 0;
     font-size: 16px;
+    line-height: 25px;
+    padding-bottom: 15px;
+    padding-top: 15px;
   }
 }
