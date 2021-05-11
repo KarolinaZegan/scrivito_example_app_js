@@ -69,7 +69,7 @@ $screen-lg-min: 1200px;
 }
 
 h2 {
-  @include fluid-type(20px, 57px);
+  @include fluid-type(22px, 57px);
   @include fluid-line-height(24px, 60px);
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
@@ -78,8 +78,8 @@ h2 {
 }
 
 h3 {
-  @include fluid-type(18px, 60px);
-  @include fluid-line-height(22px, 75px);
+  @include fluid-type(18px, 45px);
+  @include fluid-line-height(22px, 50px);
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   color: $text-grey;
@@ -114,7 +114,7 @@ p {
   color: $color;
   // border-radius: 25px;
   // border-color: $background;
-  padding: 10px 40px;
+  padding: 10px 50px;
   font-weight: 800;
   font-family: "open sans";
   text-transform: uppercase;
@@ -138,7 +138,7 @@ p {
 
 .btn-pink {
   @include button-primary($pink-button, $text-grey);
-  padding: 10px 50px;
+  // padding: 10px 50px;
   border: none;
   margin: 0;
   font-family: "Open Sans", sans-serif;

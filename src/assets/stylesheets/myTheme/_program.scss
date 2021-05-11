@@ -1,33 +1,50 @@
 .program {
   background-image: url("../images/myImages/sectionbgi.png");
   background-size: cover;
+  background-color: $light-grey;
+  background-repeat: no-repeat;
+  background-position: right;
 
   &__description {
-    margin: 175px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 60px 0;
+    // margin: 82px 0;
+    @media (min-width: $screen-sm-min) {
+      // margin: 82px 0;
+      text-align: left;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    @media (min-width: $screen-md-min) {
+      margin: 175px 0;
+    }
   }
-  h1 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 74px;
-    font-weight: 600;
-    padding-bottom: 30px;
-    line-height: 85px;
-    margin: 0;
-  }
+  // h1 {
+  //   font-family: "Open Sans", sans-serif;
+  //   font-size: 74px;
+  //   font-weight: 600;
+  //   padding-bottom: 30px;
+  //   line-height: 85px;
+  //   margin: 0;
+  // }
   p {
-    font-size: 21px;
-    font-family: "Open Sans", sans-serif;
-    padding-top: 40px;
-    padding-bottom: 80px;
-    line-height: 31px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     margin: 0;
+    @media (min-width: $screen-md-min) {
+      padding-top: 40px;
+      padding-bottom: 80px;
+      margin-bottom: 0;
+    }
   }
-  //   .btn-pink {
-  //     font-family: "Open Sans", sans-serif;
-  //     background-color: #e6c8c3;
-  //     color: grey;
-  //     text-transform: uppercase;
-  //     border: none;
-  //     padding: 10px 30px;
-  //     font-weight: bold;
-  //   }
+  .btn-pink {
+    padding: 0px 20px;
+    margin-bottom: 18px;
+
+    @media (min-width: $screen-md-min) {
+      padding: 10px 50px;
+    }
+  }
 }

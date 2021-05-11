@@ -1,21 +1,32 @@
 .galery {
   background-image: url("../images/myImages/bgc2.png");
   &__container {
-    min-height: 826px;
-    padding-top: 50px;
+    min-height: 550px;
+    padding-top: 20px;
+    @media (min-width: $screen-md-min) {
+      min-height: 826px;
+      padding-top: 50px;
+    }
   }
   &__tail-wrap {
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 10px;
+  }
+  img {
+    width: 100%;
   }
   &__tail {
     text-align: center;
   }
   h3 {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     margin: 0;
+    @media (min-width: $screen-md-min) {
+      padding-bottom: 20px;
+    }
   }
-  p {
+  &__text {
     padding-top: 15px;
     padding-bottom: 20px;
     margin: 0;
@@ -23,12 +34,5 @@
 
   &__title {
     margin: 0;
-  }
-  &__text {
-    margin: 0;
-    font-size: 16px;
-    line-height: 25px;
-    padding-bottom: 15px;
-    padding-top: 15px;
   }
 }

@@ -1,8 +1,12 @@
 .video {
   background-color: #e5ccc6;
   &__container {
-    min-height: 550px;
-    padding-top: 100px;
+    // min-height: 500px;
+    padding-top: 60px;
+    @media (min-width: $screen-md-min) {
+      min-height: 550px;
+      padding-top: 100px;
+    }
   }
   &__title {
     padding-bottom: 25px;
@@ -14,6 +18,7 @@
     margin: 0;
   }
   &__icons {
+    margin-bottom: 20px;
   }
   i {
     text-align: center;
@@ -22,5 +27,11 @@
     color: white;
     margin-right: 20px;
     padding: 5px;
+  }
+  &__description {
+    text-align: center;
+    @media (min-width: $screen-sm-min) {
+      text-align: left;
+    }
   }
 }

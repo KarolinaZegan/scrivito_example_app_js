@@ -2,20 +2,30 @@
   background-color: $bgc-grey;
   background-image: url("../images/myImages/bgc5.png");
   background-repeat: no-repeat;
+  background-size: contain;
+  @media (min-width: $screen-md-min) {
+    background-size: unset;
+  }
+
   &__container {
-    min-height: 600px;
+    min-height: 450px;
+    display: flex;
+    @media (min-width: $screen-md-min) {
+      min-height: 600px;
+    }
   }
   &__description {
-    padding-top: 100px;
+    padding-top: 180px;
     position: relative;
     z-index: 1;
+    text-align: center;
     &::after {
       content: "";
       background-image: url("../images/myImages/Brush-Vector.png");
       background-position: center;
       background-repeat: no-repeat;
-      left: 15%;
-      top: 35%;
+      left: 26%;
+      top: 53%;
       position: absolute;
       transform: translate(-50%, -50%);
       width: 50%;
@@ -23,14 +33,67 @@
       background-size: contain;
       z-index: -1;
     }
+    @media (min-width: $screen-sm-min) {
+      padding-top: 100px;
+      position: relative;
+      z-index: 1;
+      text-align: left;
+      &::after {
+        content: "";
+        background-image: url("../images/myImages/Brush-Vector.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        left: 15%;
+        top: 35%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 100%;
+        background-size: contain;
+        z-index: -1;
+      }
+    }
+    @media (min-width: $screen-md-min) {
+      padding-top: 100px;
+      position: relative;
+      z-index: 1;
+      text-align: left;
+      &::after {
+        content: "";
+        background-image: url("../images/myImages/Brush-Vector.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        left: 15%;
+        top: 35%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 100%;
+        background-size: contain;
+        z-index: -1;
+      }
+    }
   }
   h3 {
     margin: 0;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    @media (min-width: $screen-md-min) {
+      padding-bottom: 20px;
+    }
   }
   p {
     margin: 0;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    @media (min-width: $screen-md-min) {
+      padding-top: 20px;
+      padding-bottom: 40px;
+    }
+  }
+  .btn-pink {
+    padding: 0 20px;
+    @media (min-width: $screen-md-min) {
+      padding: 10px 40px;
+    }
   }
 }

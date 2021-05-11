@@ -94,6 +94,7 @@ html {
 }
 
 body {
+  // max-width: 1400px; /*my breakpoint*/
   font-family: "Source Sans Pro", sans-serif;
   font-weight: normal;
   font-size: 16px;
@@ -1192,15 +1193,15 @@ img.cookie-img {
 @media (max-width: $screen-sm-max) {
 }
 
-@media (max-width: $screen-xs-max) {
-  h1,
-  .h1 {
-    font-size: 40px;
-    line-height: 50px;
-  }
-  h2,
-  .h2 {
-    font-size: 35px;
-    line-height: 45px;
-  }
-}
+// @media (max-width: $screen-xs-max) {
+//   h1,
+//   .h1 {
+//     font-size: 40px;
+//     line-height: 50px;
+//   }
+//   h2,
+//   .h2 {
+//     font-size: 35px;
+//     line-height: 45px;
+//   }
+// }
