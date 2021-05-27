@@ -1,0 +1,63 @@
+.form {
+  background-image: url("../images/myImages/bgc2.png");
+  &__container {
+    min-height: 600px;
+    @media (min-width: $screen-md-min) {
+      min-height: 826px;
+    }
+  }
+  h3 {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin: 0;
+    @media (min-width: $screen-md-min) {
+      padding-top: 50px;
+      padding-bottom: 20px;
+    }
+  }
+  p {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin: 0;
+    @media (min-width: $screen-md-min) {
+      padding-top: 15px;
+      padding-bottom: 50px;
+    }
+  }
+  &__input {
+    margin-bottom: 20px;
+    width: 100%;
+    font-family: "Opena Sans", sans-serif;
+    font-size: 12px;
+    padding: 5px 5px;
+    background-color: $form-bgc;
+    border: 2px solid $form-border;
+    color: $form-border;
+    @media (min-width: $screen-md-min) {
+      margin-bottom: 35px;
+      font-size: 21px;
+      padding: 10px 20px;
+    }
+  }
+  &__textarea {
+    color: $form-border;
+    width: 100%;
+    font-family: "Opena Sans", sans-serif;
+    font-size: 12px;
+    padding: 5px 5px;
+    margin-bottom: 10px;
+    background-color: $form-bgc;
+    border: 2px solid $form-border;
+    @media (min-width: $screen-md-min) {
+      margin-bottom: 30px;
+      font-size: 21px;
+      padding: 10px 20px;
+    }
+  }
+  .btn-pink {
+    padding: 0 20px;
+    @media (min-width: $screen-md-min) {
+      padding: 10px 40px;
+    }
+  }
+}

@@ -1,0 +1,153 @@
+// colors --------------------------------------------------------------------------------------------
+
+$pink-button: #e6c8c3;
+$text-grey: #484f5b;
+$footer-grey: #484f5b;
+$bgc-pink: #e5ccc6;
+$light-grey: #e5e3e1;
+$bgc-grey: #e9e8e6;
+$form-bgc: #efefef;
+$form-border: #d4d4d4;
+
+// breakpoints --------------------------------------------------------------------------------------
+
+$screen-xs-max: 767px;
+$screen-sm-min: 768px;
+$screen-sm-max: 991px;
+$screen-md-min: 992px;
+$screen-md-max: 1199px;
+$screen-lg-min: 1200px;
+
+// fonts --------------------------------------------------------------------------------------------
+
+@mixin fluid-line-height(
+  $min-line-height: 18px,
+  $max-line-height: 29px,
+  $lower-range: 700px,
+  $upper-range: 1200px
+) {
+  line-height: calc(
+    #{$min-line-height} + #{(
+        ($max-line-height / ($max-line-height * 0 + 1)) -
+          ($min-line-height / ($min-line-height * 0 + 1))
+      )} * ((100vw - #{$lower-range}) / #{(
+            ($upper-range / ($upper-range * 0 + 1)) -
+              ($lower-range / ($lower-range * 0 + 1))
+          )})
+  );
+  @media screen and (max-width: $lower-range) {
+    line-height: $min-line-height;
+  }
+
+  @media screen and (min-width: $upper-range) {
+    line-height: $max-line-height;
+  }
+}
+@mixin fluid-type(
+  $min-font-size: 12px,
+  $max-font-size: 21px,
+  $lower-range: 700px,
+  $upper-range: 1200px
+) {
+  font-size: calc(
+    #{$min-font-size} + #{(
+        ($max-font-size / ($max-font-size * 0 + 1)) -
+          ($min-font-size / ($min-font-size * 0 + 1))
+      )} * ((100vw - #{$lower-range}) / #{(
+            ($upper-range / ($upper-range * 0 + 1)) -
+              ($lower-range / ($lower-range * 0 + 1))
+          )})
+  );
+
+  @media screen and (max-width: $lower-range) {
+    font-size: $min-font-size;
+  }
+
+  @media screen and (min-width: $upper-range) {
+    font-size: $max-font-size;
+  }
+}
+
+h1 {
+  @include fluid-type(22px, 57px);
+  @include fluid-line-height(24px, 60px);
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $text-grey;
+}
+h2 {
+  @include fluid-type(22px, 57px);
+  @include fluid-line-height(24px, 60px);
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $text-grey;
+}
+
+h3 {
+  @include fluid-type(18px, 45px);
+  @include fluid-line-height(22px, 50px);
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: $text-grey;
+  text-transform: capitalize;
+}
+h4 {
+  @include fluid-type(14px, 33px);
+  @include fluid-line-height(18px, 35px);
+  font-family: "Open Sans", sans-serif;
+  color: $text-grey;
+}
+
+h5 {
+  @include fluid-type(14px, 25px);
+  @include fluid-line-height(18px, 25px);
+  font-family: "Open Sans", sans-serif;
+  color: $text-grey;
+}
+
+p {
+  @include fluid-type(13px, 21px);
+  @include fluid-line-height(16px, 33px);
+  font-family: "Open Sans", sans-serif;
+  color: $text-grey;
+}
+
+// Buttons-----------------------------------------------------
+
+@mixin button-primary($background, $color) {
+  @include fluid-type(11px, 21px);
+  background-color: $background;
+  color: $color;
+  // border-radius: 25px;
+  // border-color: $background;
+  padding: 10px 50px;
+  font-weight: 800;
+  font-family: "open sans";
+  text-transform: uppercase;
+  box-shadow: none;
+  border: none;
+
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: darken($background, 15%);
+  }
+  &:active,
+  &.active {
+    background-color: darken($background, 15%);
+  }
+  &:focus {
+    background-color: darken($background, 15%);
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+.btn-pink {
+  @include button-primary($pink-button, $text-grey);
+  // padding: 10px 50px;
+  border: none;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}

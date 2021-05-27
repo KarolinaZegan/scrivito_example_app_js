@@ -4,6 +4,8 @@
 
 @import "variables";
 @import "mixins";
+@import "./variables/myVariables";
+@import "yoga_index";
 
 /* react-slick
 ================================================== */
@@ -14,11 +16,11 @@ $slick-font-path: "~slick-carousel/slick/fonts/";
 @font-face {
   font-family: "slick_swap";
   font-display: swap;
-  src: url($slick-font-path+"slick.eot");
-  src: url($slick-font-path+"slick.eot?#iefix") format("embedded-opentype"),
-    url($slick-font-path+"slick.woff") format("woff"),
-    url($slick-font-path+"slick.ttf") format("truetype"),
-    url($slick-font-path+"slick.svg#slick") format("svg");
+  src: url($slick-font-path + "slick.eot");
+  src: url($slick-font-path + "slick.eot?#iefix") format("embedded-opentype"),
+    url($slick-font-path + "slick.woff") format("woff"),
+    url($slick-font-path + "slick.ttf") format("truetype"),
+    url($slick-font-path + "slick.svg#slick") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -92,6 +94,7 @@ html {
 }
 
 body {
+  // max-width: 1400px; /*my breakpoint*/
   font-family: "Source Sans Pro", sans-serif;
   font-weight: normal;
   font-size: 16px;
@@ -139,58 +142,58 @@ p {
   margin: 0 0 25px 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-family: "PT Sans Narrow", sans-serif;
-  font-weight: 400;
-  color: $theme-greydark;
-  margin: 0 0 15px 0;
-  padding: 0;
-  line-height: 1.5;
-}
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6,
+// .h1,
+// .h2,
+// .h3,
+// .h4,
+// .h5,
+// .h6 {
+//   font-family: "PT Sans Narrow", sans-serif;
+//   font-weight: 400;
+//   color: $theme-greydark;
+//   margin: 0 0 15px 0;
+//   padding: 0;
+//   line-height: 1.5;
+// }
 
-h1,
-.h1 {
-  font-size: 60px;
-  line-height: 70px;
-}
-h2,
-.h2 {
-  font-size: 42px;
-  line-height: 50px;
-}
-h3,
-.h3 {
-  font-size: 30px;
-  line-height: 40px;
-}
-h4,
-.h4 {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 300;
-  font-size: 22px;
-  line-height: 30px;
-  color: $theme-greymiddle;
-}
-h5,
-.h5 {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 16px;
-}
-h6,
-.h6 {
-  font-size: 14px;
-}
+// h1,
+// .h1 {
+//   font-size: 60px;
+//   line-height: 70px;
+// }
+// h2,
+// .h2 {
+//   font-size: 42px;
+//   line-height: 50px;
+// }
+// h3,
+// .h3 {
+//   font-size: 30px;
+//   line-height: 40px;
+// }
+// h4,
+// .h4 {
+//   font-family: "Source Sans Pro", sans-serif;
+//   font-weight: 300;
+//   font-size: 22px;
+//   line-height: 30px;
+//   color: $theme-greymiddle;
+// }
+// h5,
+// .h5 {
+//   font-family: "Source Sans Pro", sans-serif;
+//   font-size: 16px;
+// }
+// h6,
+// .h6 {
+//   font-size: 14px;
+// }
 
 .b-bottom {
   display: block;
@@ -1052,9 +1055,12 @@ img.cookie-img {
   }
   .cookie-button {
     width: 48%;
-    margin: 10px 5px 0 0!important;
+    margin: 10px 5px 0 0 !important;
   }
-  .cookie-button + .cookie-button { margin: 10px 0 0 0!important; float: right; }
+  .cookie-button + .cookie-button {
+    margin: 10px 0 0 0 !important;
+    float: right;
+  }
   .cookie-box {
     padding: 10px 20px;
   }
@@ -1187,15 +1193,15 @@ img.cookie-img {
 @media (max-width: $screen-sm-max) {
 }
 
-@media (max-width: $screen-xs-max) {
-  h1,
-  .h1 {
-    font-size: 40px;
-    line-height: 50px;
-  }
-  h2,
-  .h2 {
-    font-size: 35px;
-    line-height: 45px;
-  }
-}
+// @media (max-width: $screen-xs-max) {
+//   h1,
+//   .h1 {
+//     font-size: 40px;
+//     line-height: 50px;
+//   }
+//   h2,
+//   .h2 {
+//     font-size: 35px;
+//     line-height: 45px;
+//   }
+// }

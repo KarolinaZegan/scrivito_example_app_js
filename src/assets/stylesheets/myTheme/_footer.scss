@@ -1,0 +1,45 @@
+.footer {
+  background-color: $footer-grey;
+  color: white;
+  &__teil {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    text-align: center;
+    @media (min-width: $screen-sm-min) {
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    @media (min-width: $screen-sm-min) {
+      text-align: left;
+    }
+  }
+  p {
+    color: white;
+    font-size: 16px;
+  }
+  h4 {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  h5 {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  i {
+    color: $text-grey;
+    background-color: white;
+    padding: 5px;
+    margin-right: 20px;
+    min-width: 24px;
+    text-align: center;
+  }
+  a {
+    color: white;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+}
