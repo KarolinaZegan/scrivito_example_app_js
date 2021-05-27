@@ -8,6 +8,7 @@
     <meta name="author" content="" />
     <title>Scrivito Example App JS - Homepage</title>
     <base href="/" />
+    <script src="https://use.fontawesome.com/f177db0efd.js"></script>
     <link
       href="file:///Users/karolinazegan/source/scrivito_example_app_js/build/assets/index.css"
       rel="stylesheet"
@@ -33,6 +34,9 @@
                   alt=""
                 />
               </div>
+              <button class="navigation__toggle">
+                <i class="fa fa-bars"></i><a href="#"></a>
+              </button>
               <div class="navigation__menu">
                 <ul class="navigation__menu-list">
                   <li class="navigation__item">
@@ -53,9 +57,6 @@
                   <li class="navigation__item"><a href="#">Shop</a></li>
                   <li class="navigation__item"><a href="#">Contact</a></li>
                 </ul>
-                <button class="navigation__toggle">
-                  <i class="fa fa-bars"></i><a href="#"></a>
-                </button>
               </div>
             </div>
           </div>
@@ -85,10 +86,10 @@
     </header> -->
     </section>
     <section class="galery">
-      <div class="container galery__container blog">
+      <div class="container galery__container-blog">
         <div class="row">
           <div class="col text-center">
-            <h3>Blog</h3>
+            <h1>Blog</h1>
           </div>
         </div>
         <div class="row">
@@ -205,5 +206,16 @@
         </div>
       </div>
     </footer>
+    <script>
+      // Toggle mobile menu
+      const toggleButton = document.querySelector(".navigation__toggle")
+      const menu = document.querySelector(".navigation__container")
+
+      toggleButton.addEventListener("click", function(){
+        console.log("dziala")
+        menu.classList.toggle("is-show")
+        console.log(menu)
+      })
+    </script>
   </body>
 </html>

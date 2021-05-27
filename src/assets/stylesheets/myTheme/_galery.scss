@@ -35,4 +35,10 @@
   &__title {
     margin: 0;
   }
+  &__container-blog{
+    margin-top: 70px;
+    @media (min-width: $screen-md-min) {
+    margin-top: 100px;
+    }
+  }
 }

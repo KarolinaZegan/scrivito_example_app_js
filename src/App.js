@@ -28,6 +28,9 @@ export default function App() {
                 <div className="navigation__logo">
                   <img src="src/assets/images/myImages/logo.png" className="navigation__img"alt=""/>
                 </div>
+                <div>
+                <button className="navigation__toggle"><i className="fa fa-bars"></i><a href="#"></a></button>
+                </div>
                 <div className="navigation__menu">
                   <ul className="navigation__menu-list">
                     <li className="navigation__item"><a href="#">Home</a></li>
@@ -38,7 +41,6 @@ export default function App() {
                     <li className="navigation__item"><a href="#">Shop</a></li>
                     <li className="navigation__item"><a href="#">Contact</a></li>
                   </ul>
-                  <button className="navigation__toggle"><i className="fa fa-bars"></i><a href="#"></a></button>
                 </div>
           </div>
         </div>
@@ -51,7 +53,7 @@ export default function App() {
             <img src="src/assets/images/myImages/header1.png" alt="" className="header__img"/>
         </div>
         <div className="col-12 col-md header__main-description">
-          <h2>Balance Your Body and Mind</h2>
+          <h1>Balance Your Body and Mind</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta veniam laborum ab, praesentium a soluta nostrum libero eligendi repellendus ullam?</p>
           <button className ="btn-pink">join us now</button>
         </div>

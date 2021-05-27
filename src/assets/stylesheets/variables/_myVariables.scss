@@ -68,6 +68,14 @@ $screen-lg-min: 1200px;
   }
 }
 
+h1 {
+  @include fluid-type(22px, 57px);
+  @include fluid-line-height(24px, 60px);
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $text-grey;
+}
 h2 {
   @include fluid-type(22px, 57px);
   @include fluid-line-height(24px, 60px);

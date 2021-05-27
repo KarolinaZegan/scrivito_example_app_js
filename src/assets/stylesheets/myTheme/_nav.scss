@@ -11,6 +11,18 @@
   background: white;
   &__container {
     background-color: white;
+
+    &.is-show{
+      height: 250px;
+      .navigation__menu{
+        height: 150px;
+        overflow-y: scroll;
+        flex-basis: 70%;
+        .navigation__menu-list{
+          display: block;
+        }
+      }
+    }
   }
   &__bar {
     display: flex;
@@ -18,12 +30,17 @@
     align-items: center;
   }
   &__menu {
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    flex-basis: 70%;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
     @media (min-width: 992px) {
-      // justify-content: space-between;
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      flex-basis: 70%;
+      position: unset;
+      transform: unset;
     }
   }
   &__img {
@@ -68,6 +85,7 @@
     display: block;
     border: none;
     background-color: transparent;
+    // transform: translateX(350%);
     @media (min-width: 992px) {
       display: none;
     }
